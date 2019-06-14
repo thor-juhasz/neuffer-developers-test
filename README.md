@@ -17,7 +17,7 @@ Script will take two required parameters:
 * <b>division</b> - to divide  first number in the row and second
 
 
-As result of the command execution should be csv file with three columns: first number, second number, and result. In CSV-file should be written **ONLY** numbers greater than null. If result less than null - it should be written in logs.
+As result of the command execution should be csv file with three columns: first number, second number, and result. In CSV-file should be written **ONLY** numbers greater than 0 (zero). If result less than 0 - it should be written in logs.
 
 **Example 1**
 
