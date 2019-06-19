@@ -1,8 +1,13 @@
 <?php
 
-final class Plus extends Calculate implements Operations
+namespace App\Calculations;
+
+use App\Calculation\Operations;
+
+
+class Plus implements Operations
 {
-    public function calc(int $a, int $b): int
+    public static function calc(int $a, int $b): int
     {
         return $a + $b;
     }

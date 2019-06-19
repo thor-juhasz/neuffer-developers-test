@@ -1,8 +1,13 @@
 <?php
 
-final class Minus extends Calculate implements Operations
+namespace App\Calculations;
+
+use App\Calculation\Operations;
+
+
+class Minus implements Operations
 {
-    public function calc(int $a, int $b): int
+    public static function calc(int $a, int $b): int
     {
         return $a - $b;
     }

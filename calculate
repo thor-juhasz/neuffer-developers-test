@@ -1,0 +1,27 @@
+#!/usr/bin/env php
+<?php
+
+// Set project root directory
+define('PROJECT_DIR', __DIR__ . '/');
+
+// Load vendors
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Load up application
+use Symfony\Component\Console\Application;
+use App\Console\CalculateCommand;
+$app = new Application('CSV Calculation', '0.1');
+
+// Register our calculation command
+$app->add(new CalculateCommand());
+
+// Single command application
+$app->setDefaultCommand('calculate', true);
+
+// Remove symfony built-in options that we're not using
+$rm = ['ansi', 'no-ansi', 'no-interaction', 'verbose', 'help', 'quiet', 'version'];
+$options = array_diff_key($app->getDefinition()->getOptions(), array_flip($rm));
+$app->getDefinition()->setOptions($options);
+
+// Run application
+$app->run();

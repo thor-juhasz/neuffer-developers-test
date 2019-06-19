@@ -1,0 +1,9 @@
+[2019-06-19 17:48:37.148084] Started action division
+[2019-06-19 17:48:37.148250] Numbers 52 and -10 are invalid. Result: -5
+[2019-06-19 17:48:37.148287] Numbers 85 and -10 are invalid. Result: -8
+[2019-06-19 17:48:37.148306] Numbers 4 and -15 are invalid. Result: 0
+[2019-06-19 17:48:37.148324] Numbers -31 and -46 are invalid. Result: 0
+[2019-06-19 17:48:37.148341] Numbers -74 and 19 are invalid. Result: -3
+[2019-06-19 17:48:37.148357] Numbers 46 and -69 are invalid. Result: 0
+[2019-06-19 17:48:37.148387] Numbers -48 and 64 are invalid. Result: 0
+[2019-06-19 17:48:37.148436] Action ended

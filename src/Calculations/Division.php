@@ -1,10 +1,17 @@
 <?php
 
-final class Division extends Calculate implements Operations
+namespace App\Calculations;
+
+use App\Calculation\Operations;
+
+
+class Division implements Operations
 {
-    public function calc(int $a, int $b): int
+    public static function calc(int $a, int $b): int
     {
-        if ($b <= 0) return 0;
+        if ($b === 0) {
+            return 0;
+        }
         return $a / $b;
     }
 }
